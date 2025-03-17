@@ -1,0 +1,2577 @@
+{
+  "numberOfURLsTested": 13,
+  "violations": [
+    {
+      "url": "https://technologyonecorp.com",
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<span class=\"golden-ratio\">unity</span>",
+          "target": [
+            ".title > .golden-ratio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.66 (foreground color: #febe10, background color: #ffffff, font size: 38.4pt (51.2px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "url": "https://technologyonecorp.com",
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h3 class=\"white mb-5\">\n                    Purpose-built functionality for our community\n                </h3>",
+          "target": [
+            ".row:nth-child(1) > .mb-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"white\">Education</h5>",
+          "target": [
+            ".row:nth-child(2) > .col-6:nth-child(1) > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "url": "https://technologyonecorp.com",
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternate text or a role of none or presentation",
+      "help": "Images must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<img src=\"https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL2RVZWpNVGNNQ0xRRWFBOEtDaE1yLnN2ZyJ9:frontify:tLw3c7_aQ1pTcAoA00h4vAlNk7Hy90xYWiRhu56ARik\" width=\"25\">",
+          "target": [
+            ".search_icon > img[width=\"25\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcLzFKZWRDelBOTFRlQ25hRFhGQ25SLnN2ZyJ9:frontify:9D4ZB36UbzBrO4nHkYBz7TFpZK936IEBHKPdy8QcrOo\" width=\"25\">",
+          "target": [
+            ".world_icon > img[width=\"25\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL1NBTWtibnU1MlQ4OTRkTkpwc0NrLnN2ZyJ9:frontify:EzM3EvIwYczU2mh4i9dXz0-BSoCFtD4gHMJzEaj6G_A\" width=\"25\">",
+          "target": [
+            ".login_icon > img[width=\"25\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.technology1.com/__data/assets/file/0004/251968/T1_SaaS-K.svg\" width=\"50\" class=\"mb-2\">",
+          "target": [
+            ".ms-4 > .nav-item:nth-child(1) > .nav-link[data-target=\"Sassplus\"] > .mb-2[width=\"50\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/?a=263337\" class=\"position-absolute signature\">",
+          "target": [
+            ".signature"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.technology1.com/__data/assets/file/0004/251968/T1_SaaS-K.svg\" height=\"35\" class=\"align-baseline\">",
+          "target": [
+            ".align-baseline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.technology1.com/__data/assets/file/0019/263332/BR25_HeroHero-ipad_21.webp\" class=\"img-fluid\">",
+          "target": [
+            ".img-fluid"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL3hldjZxSnphZzdFTnY3RTh3bVVlLnN2ZyJ9:frontify:Mze0x1xKj_11qJgNI-2Utj8FOjfp78R5qDBas4AQc-Q\" class=\"icon mx-auto mb-3\">",
+          "target": [
+            "div[data-priority=\"<div>1</div>\"] > .icon-with-circle.bg-midnight-100 > .mx-auto.mb-3.icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL21ERDgyOVZoSFIzVjNiZ3FWSEdSLnN2ZyJ9:frontify:bxJv1opZ5I7nhQVCM3zZtIUUqebLmziGRIkYAvnUYmY\" class=\"icon mx-auto mb-3\">",
+          "target": [
+            "div[data-priority=\"<div>2</div>\"] > .icon-with-circle.bg-midnight-100 > .mx-auto.mb-3.icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2ZpbGVcL0RpRXhVelJaYUV3bmlOTnJjQmFmLnN2ZyJ9:frontify:UDnkp6l8N2khMvlvBYUzKGLL-8rTZ3dMOWbLTYxbqKg\" class=\"icon mx-auto mb-3\">",
+          "target": [
+            "div[data-priority=\"<div>3</div>\"] > .icon-with-circle.bg-midnight-100 > .mx-auto.mb-3.icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.technology1.com/__data/assets/file/0008/259586/ERP-in-30@2x.webp\" width=\"100%\">",
+          "target": [
+            "img[width=\"100%\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.technology1.com/__data/assets/file/0010/269056/aws_partner_of_the_year_award.webp\" width=\"80\" class=\"me-4\">",
+          "target": [
+            ".me-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "url": "https://technologyonecorp.com",
+      "id": "meta-viewport",
+      "impact": "critical",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<section role=\"region\" class=\"section is-primary is-hidden-sm pt-0\" id=\"timeSwap\">",
+          "target": [
+            "#timeSwap"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role region is not allowed for given element"
+        },
+        {
+          "html": "<section role=\"region\" class=\"section features\">",
+          "target": [
+            ".features"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role region is not allowed for given element"
+        },
+        {
+          "html": "<section role=\"region\" class=\"section section text-center is-primary\">",
+          "target": [
+            "section[role=\"region\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role region is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"tabs-header is-borderless is-white\" role=\"tablist\">",
+          "target": [
+            ".tabs-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=tabpanel]"
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<input class=\"form-email\" type=\"email\" id=\"homeEmail\" name=\"email\" placeholder=\"What is your work email?\">",
+          "target": [
+            "#homeEmail"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.19 (foreground color: #909090, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternate text or a role of none or presentation",
+      "help": "Images must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-best-western.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(1) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-hyatt.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(2) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-sercotel.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(3) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-minor.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(4) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-la-malmaison.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(5) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-george.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(6) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" decoding=\"async\" class=\"space-sm-bottom\" src=\"/wp-content/uploads/2023/08/logo-evidencia.svg\">",
+          "target": [
+            ".is-sm-6.is-3.grid-item:nth-child(7) > .space-sm-bottom[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html lang=\"en\" class=\"fa-events-icons-ready\" data-uw-w-loader=\"\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a class=\"overlay-here\" href=\"/increase-room-revenue/\"></a>",
+          "target": [
+            "a[href$=\"increase-room-revenue/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"overlay-here\" href=\"/find-the-right-guests/\"></a>",
+          "target": [
+            "a[href$=\"find-the-right-guests/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"overlay-here\" href=\"/boost-guest-spend/\"></a>",
+          "target": [
+            "a[href$=\"boost-guest-spend/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"overlay-here\" href=\"/optimise-time/\"></a>",
+          "target": [
+            "a[href$=\"optimise-time/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://siteminder.com",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h1 class=\"headline text-light\">SiteMinder gives hotels unbeatable revenue results.</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"lead text-light\">Driving over 125 million reservations annually.</p>",
+          "target": [
+            ".text-light.lead"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input class=\"form-email\" type=\"email\" id=\"homeEmail\" name=\"email\" placeholder=\"What is your work email?\">",
+          "target": [
+            "#homeEmail"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/watch-demo/\" class=\"button button--outlined button--light\">Watch demo</a>",
+          "target": [
+            ".button-group.space-top > .button--light.button--outlined[href$=\"watch-demo/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"slider-wrap\">",
+          "target": [
+            "div[autoplay=\"false\"] > .slider-wrap"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"section gradient bot-bg hotels\">",
+          "target": [
+            ".gradient"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"search-bar__input-wrapper\" id=\"search-mobile__form\" aria-labelledby=\"search-rebrand__toggle\" aria-expanded=\"false\">",
+          "target": [
+            "#search-mobile__form"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h3><img src=\"http://www.deakin.edu.au/__data/assets/image/0010/2683360/37547_550x275_intl.jpeg\" alt=\"\" width=\"100%#\"></h3>",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width.module__content-panel:nth-child(8) > .module__content-panel--no-divider.module__content-panel--wrapper > .module__content-panel--text > .module__content-panel--2-col > .module__content-panel--col-left.module__content-panel--col > .module__content-panel--col--content > .module__content-panel--content > h3:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h3><img src=\"http://www.deakin.edu.au/__data/assets/image/0011/2683361/39453_550x275.jpeg\" alt=\"\" width=\"100%#\"></h3>",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width.module__content-panel:nth-child(8) > .module__content-panel--no-divider.module__content-panel--wrapper > .module__content-panel--text > .module__content-panel--2-col > .module__content-panel--col-right.module__content-panel--col > .module__content-panel--col--content > .module__content-panel--content > h3:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<img class=\"main-logo__image\" src=\"http://www.deakin.edu.au/__data/assets/image/0007/1146985/logo_deakin-rebrand-stacked.png\" alt=\"Deakin University Australia\">",
+          "target": [
+            ".main-logo__image"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html class=\"has-js wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n7-active wf-worldlylight-n4-active wf-worldlybold-n4-active wf-worldlyregular-n4-active wf-active\" lang=\"en\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<nav class=\"navigation-rebrand__wrapper\">",
+          "target": [
+            ".navigation-rebrand__wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"grid\">",
+          "target": [
+            "#domestic_content > .module__banner--homepage.module__banner > .grid"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2>Find your course</h2>",
+          "target": [
+            "#domestic_content > .module__banner-course-search.background--charcoal-dark > .grid > .cell--10-col.cell--offset-0-col-large.cell--offset-1-col-x-large > .module__banner-course-search--content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label for=\"domestic\">Domestic</label>",
+          "target": [
+            "#domestic_content > .module__banner-course-search.background--charcoal-dark > .grid > .cell--10-col.cell--offset-0-col-large.cell--offset-1-col-x-large > .module__banner-course-search--content > .course-search-form > .radio-group > span:nth-child(1) > label[for=\"domestic\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label for=\"international\">International</label>",
+          "target": [
+            "#domestic_content > .module__banner-course-search.background--charcoal-dark > .grid > .cell--10-col.cell--offset-0-col-large.cell--offset-1-col-x-large > .module__banner-course-search--content > .course-search-form > .radio-group > span:nth-child(2) > label[for=\"international\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"query\" type=\"text\" value=\"\" aria-label=\"Search by course\" placeholder=\"Search by course\" autocomplete=\"off\" tabindex=\"1\">",
+          "target": [
+            "#domestic_content > .module__banner-course-search.background--charcoal-dark > .grid > .cell--10-col.cell--offset-0-col-large.cell--offset-1-col-x-large > .module__banner-course-search--content > .course-search-form > .form-group > .course-search-form--predictive > input[placeholder=\"Search by course\"][name=\"query\"][type=\"text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"module__content-panel module__banner-quick-links background--charcoal-dark\">",
+          "target": [
+            "#domestic_content > .module__banner-quick-links.background--charcoal-dark"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell cell--offset-1-col cell--offset-1-col-x-large cell--offset-0-col-large cell--offset-0-col-small cell--6-col\">",
+          "target": [
+            "#domestic_content > .module__interest-area-home.background--grey-light > .grid > .cell--offset-1-col.cell--6-col.cell--offset-0-col-large"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module__content-panel  no-margin--bottom\">",
+          "target": [
+            "#domestic_content > .no-margin--bottom.module__content-panel:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module__promotion under-banner background--grey-light icons--charcoal no-margin\">",
+          "target": [
+            "#domestic_content > .module__promotion.under-banner.icons--charcoal"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-section=\"celebrating 50 years\" class=\"module__content-panel module__content-panel-rebrand  module__content-panel-rebrand--full-width \">",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width[data-section=\"celebrating 50 years\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-section=\"are you an international student?\" class=\"module__content-panel module__content-panel-rebrand  module__content-panel-rebrand--full-width \">",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width.module__content-panel:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module__two-column-slash background--grey-light\" \"=\"\">",
+          "target": [
+            "#domestic_content > .module__two-column-slash.background--grey-light[\\\"=\"\"]:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-section=\"let’s keep earth wonderful\" class=\"module__content-panel module__content-panel-rebrand  module__content-panel-rebrand--full-width \">",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width[data-section=\"let’s keep earth wonderful\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module__video-module--content\"><h3>The little patch of sun</h3><p>It’s the charger of our furry friend's batteries and Deakin's Renewable Energy Microgrid. Did you know our solar farm, a component of the microgrid, is one of the largest on an Australian university campus?</p></div>",
+          "target": [
+            "#domestic_content > .module__video-module.module__video-module--right-layout[data-module=\"video-module\"] > .grid > .cell--4-col-small.cell--5-col.cell:nth-child(2) > .module__video-module--details > .module__video-module--content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-section=\"our strong commitment to reconciliation\" class=\"module__content-panel module__content-panel-rebrand  module__content-panel-rebrand--full-width \">",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width.module__content-panel:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module__two-column-slash background--grey-light\" \"=\"\">",
+          "target": [
+            "#domestic_content > .module__two-column-slash.background--grey-light[\\\"=\"\"]:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-section=\"what's happening at deakin?\" class=\"module__content-panel module__content-panel-rebrand  module__content-panel-rebrand--full-width \">",
+          "target": [
+            "#domestic_content > .module__content-panel-rebrand.module__content-panel-rebrand--full-width[data-section=\"what's happening at deakin?\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module__content-panel module__copy-callout--offset module__copy-callout--yellow  module__copy-callout--lgtGreymodule__copy-callout--light no-margin--bottom\">",
+          "target": [
+            "#domestic_content > .module__copy-callout--offset.module__copy-callout--yellow.module__copy-callout--lgtGreymodule__copy-callout--light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"popup-gdpr-text\">We use cookies to improve your experience. You consent to the use of our cookies if you proceed. Visit our <a href=\"/footer/privacy\" target=\"_blank\">Privacy policy</a> for more information.</p>",
+          "target": [
+            ".popup-gdpr-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://deakin.edu.au",
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<input name=\"query\" type=\"text\" value=\"\" aria-label=\"Search by course\" placeholder=\"Search by course\" autocomplete=\"off\" tabindex=\"1\">",
+          "target": [
+            "#domestic_content > .module__banner-course-search.background--charcoal-dark > .grid > .cell--10-col.cell--offset-0-col-large.cell--offset-1-col-x-large > .module__banner-course-search--content > .course-search-form > .form-group > .course-search-form--predictive > input[placeholder=\"Search by course\"][name=\"query\"][type=\"text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button class=\"courses-search-text-submit\" aria-label=\"Search by course\" tabindex=\"1\">",
+          "target": [
+            "#domestic_content > .module__banner-course-search.background--charcoal-dark > .grid > .cell--10-col.cell--offset-0-col-large.cell--offset-1-col-x-large > .module__banner-course-search--content > .course-search-form > .form-group > .course-search-form--predictive > .courses-search-text-submit[aria-label=\"Search by course\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    },
+    {
+      "url": "https://lumivero.com",
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"#\" onclick=\"UC_UI.showSecondLayer();\">Privacy Settings</a>",
+          "target": [
+            "a[href=\"#\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.91 (foreground color: #b4008d, background color: #00395b, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "url": "https://lumivero.com",
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html lang=\"en-US\" data-uw-w-loader=\"\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "url": "https://lumivero.com",
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<nav id=\"_nav_menu-452-15\" class=\"oxy-nav-menu mobile-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow oxy-nav-menu-vertical\">",
+          "target": [
+            "#_nav_menu-452-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "url": "https://lumivero.com",
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a id=\"link-608-15\" class=\"ct-link\" href=\"/buy-now/nvivo-getting-started-bundle/\" target=\"_self\"></a>",
+          "target": [
+            "body > .ct-link[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a id=\"link-608-15\" class=\"ct-link\" href=\"/buy-now/nvivo-getting-started-bundle/\" target=\"_self\"></a>",
+          "target": [
+            "#section-565-15 > .ct-link[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a id=\"link-608-15\" class=\"ct-link\" href=\"/buy-now/nvivo-getting-started-bundle/\" target=\"_self\"></a>",
+          "target": [
+            "#section-565-15 > .ct-section-inner-wrap > .ct-link[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a id=\"link-608-15\" class=\"ct-link\" href=\"/buy-now/nvivo-getting-started-bundle/\" target=\"_self\"></a>",
+          "target": [
+            "#div_block-567-15 > .ct-link[target=\"_self\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a id=\"link-345-15\" class=\"ct-link saas-logo\" href=\"/\" target=\"_self\"><img id=\"image-346-15\" alt=\"\" src=\"https://lumivero.com/wp-content/uploads/2025/02/lumivero-logo-inverted-rgb.png\" class=\"ct-image\"></a>",
+          "target": [
+            "#link-345-15"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a id=\"link-8-95\" class=\"ct-link \" href=\"/\" target=\"_self\"><img id=\"image-9-95\" alt=\"\" src=\"https://lumivero.com/wp-content/uploads/2025/02/lumivero-logo-inverted-rgb.png\" class=\"ct-image footer_logo\"></a>",
+          "target": [
+            "#link-8-95"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://lumivero.com",
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html lang=\"en-US\" data-uw-w-loader=\"\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "url": "https://lumivero.com",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div id=\"text_block-577-15\" class=\"ct-text-block\">NVivo 15: Revolutionizing Qualitative Data Analysis with AI - Learn more -&gt;</div>",
+          "target": [
+            "#text_block-577-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"section-895-23\" class=\" ct-section main-hero-section\">",
+          "target": [
+            "#section-895-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 id=\"headline-1445-23\" class=\"ct-headline white-text centered-header-h1\"><div style=\"text-align: center;\">Get More Impactful Insights From Your Data</div></h2>",
+          "target": [
+            "#headline-1445-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-901-23\" class=\"ct-text-block centered-header-p\">",
+          "target": [
+            "#text_block-901-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"section-1015-23\" class=\" ct-section \">",
+          "target": [
+            "#section-1015-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"section-943-23\" class=\" ct-section testimonial-section\">",
+          "target": [
+            "#section-943-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 id=\"headline-1051-23\" class=\"ct-headline river-text-h2\">Aggregate and Organize</h2>",
+          "target": [
+            "#headline-1051-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1052-23\" class=\"ct-text-block\">",
+          "target": [
+            "#text_block-1052-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-967-23\" class=\"ct-text-block simple-text-link-link\">Learn more</div>",
+          "target": [
+            "#text_block-967-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 id=\"headline-1141-23\" class=\"ct-headline river-text-h2\">Analyze with Expert Methods</h2>",
+          "target": [
+            "#headline-1141-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1142-23\" class=\"ct-text-block\">",
+          "target": [
+            "#text_block-1142-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1154-23\" class=\"ct-text-block simple-text-link-link\">Learn more</div>",
+          "target": [
+            "#text_block-1154-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 id=\"headline-1112-23\" class=\"ct-headline river-text-h2\">Present and Report</h2>",
+          "target": [
+            "#headline-1112-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1113-23\" class=\"ct-text-block\">",
+          "target": [
+            "#text_block-1113-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1125-23\" class=\"ct-text-block simple-text-link-link\">Learn more</div>",
+          "target": [
+            "#text_block-1125-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 id=\"headline-1081-23\" class=\"ct-headline river-text-h2\">Track and Feedback</h2>",
+          "target": [
+            "#headline-1081-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1082-23\" class=\"ct-text-block\">",
+          "target": [
+            "#text_block-1082-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-1104-23\" class=\"ct-text-block simple-text-link-link\">Learn more</div>",
+          "target": [
+            "#text_block-1104-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"section-994-23\" class=\" ct-section\">",
+          "target": [
+            "#section-994-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"div_block-73-15\" class=\"ct-div-block footer-column\">",
+          "target": [
+            "#div_block-73-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-542-15\" class=\"ct-text-block footer-text\">Products</div>",
+          "target": [
+            "#text_block-542-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-534-15\" class=\"ct-text-block footer-text\">Data Management with Industries</div>",
+          "target": [
+            "#text_block-534-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-546-15\" class=\"ct-text-block footer-text\">Company</div>",
+          "target": [
+            "#text_block-546-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-462-15\" class=\"ct-text-block footer-text\">Resources</div>",
+          "target": [
+            "#text_block-462-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"text_block-424-15\" class=\"ct-text-block \">© 2025 Lumivero, All rights reserved.</div>",
+          "target": [
+            "#text_block-424-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"code_block-585-15\" class=\"ct-code-block\"><a href=\"#\" onclick=\"UC_UI.showSecondLayer();\">Privacy Settings</a></div>",
+          "target": [
+            "#code_block-585-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://regalrexnord.com",
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=m\" target=\"_blank\">Cloudflare</a>",
+          "target": [
+            "a"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.83:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0051c3, surrounding text: #313131)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "url": "https://regalrexnord.com",
+      "id": "meta-refresh",
+      "impact": "critical",
+      "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+      "help": "Delayed refresh under 20 hours must not be used",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-refresh?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<meta http-equiv=\"refresh\" content=\"390\">",
+          "target": [
+            "meta[http-equiv=\"refresh\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  <meta> tag forces timed refresh of page (less than 20 hours)"
+        }
+      ]
+    },
+    {
+      "url": "https://rescue.org",
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<button role=\"tab\" class=\"rplm-pager-item-1 rplm-pager-item-1--mobile-dots\" id=\"slick-slide-control00\" aria-controls=\"slick-slide00\" aria-label=\"1 of 2\" tabindex=\"0\" aria-selected=\"true\">",
+          "target": [
+            "#slick-slide-control00"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<button role=\"tab\" class=\"rplm-pager-item-1 rplm-pager-item-1--mobile-dots\" id=\"slick-slide-control01\" aria-controls=\"slick-slide01\" aria-label=\"2 of 2\" tabindex=\"-1\">\n  <div class=\"rplm-pager-item-1__slug\">Anastasiia</div>\n  <div class=\"rplm-pager-item-1__title\">Ukraine</div>\n</button>",
+          "target": [
+            "#slick-slide-control01"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "url": "https://rescue.org",
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"rplc-efficiency__title\" role=\"heading\" aria-level=\"4\">Our efficiency</div>",
+          "target": [
+            ".rplc-efficiency__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "url": "https://rescue.org",
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<li class=\"slick-active\" role=\"tab\">",
+          "target": [
+            ".slick-active[role=\"tab\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li role=\"tab\">",
+          "target": [
+            "li[role=\"tab\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        }
+      ]
+    },
+    {
+      "url": "https://rescue.org",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"rpll-hero-layout-split__primary-1\">",
+          "target": [
+            ".rpll-hero-layout-split__primary-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rpll-hero-layout-split__image-wrapper\">",
+          "target": [
+            ".rpll-hero-layout-split__image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rpll-footer-layout-1__section\">",
+          "target": [
+            ".rpll-footer-layout-1__section:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rplc-efficiency__title\" role=\"heading\" aria-level=\"4\">Our efficiency</div>",
+          "target": [
+            ".rplc-efficiency__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"rplc-efficiency__list\">",
+          "target": [
+            ".rplc-efficiency__list"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rpll-footer-layout-1__section\">",
+          "target": [
+            ".rpll-footer-layout-1__section:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rpll-footer-layout-2\">",
+          "target": [
+            ".rpll-footer-layout-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"rplc-sticky-footer__close\" data-rpl-sticky-footer-close=\"\" data-once=\"rpl-sticky-footer\">×</span>",
+          "target": [
+            ".rplc-sticky-footer__close"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rplc-call-to-action-5__description\">U.S. aid cuts put thousands of children at risk of starvation.</div>",
+          "target": [
+            ".rplc-call-to-action-5__description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://rmit.edu.au",
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"threecolumn\" id=\"accordion\" role=\"tablist\">",
+          "target": [
+            "#accordion"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: ul[tabindex], a[tabindex]"
+        }
+      ]
+    },
+    {
+      "url": "https://rmit.edu.au",
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html lang=\"en-AU\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "url": "https://rmit.edu.au",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h1 style=\"font-size:0;width:1px;height:1px;display:inline-block;overflow:hidden;position:absolute !important;\n            border:0 !important;padding:0 !important;margin:0 !important;clip:rect(1px,1px,1px,1px)\">\n        RMIT University</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"topnav-mobi-logosection\">",
+          "target": [
+            ".topnav-mobi-logosection"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"topnav-mobi-search topnav-mobi-heart-icon\">",
+          "target": [
+            ".topnav-mobi-heart-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<picture data-asset-url=\"https://s7ap1.scene7.com/is/image/rmit/homepage-building80-1440x580\" data-scene7-domain=\"https://s7ap1.scene7.com/\" id=\"homepage-banner\">",
+          "target": [
+            "#homepage-banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-white text-center text-md-start mt-4 mb-0 my-md-4\">\n                                    What's next awaits</h2>",
+          "target": [
+            ".text-md-start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"hidden-xs quicklinks\">\n                                    <div class=\"quicklinks-title\">\n                                        Find out what's next for you at RMIT.\n                                    </div>\n                                    \n                                </div>",
+          "target": [
+            ".quicklinks.hidden-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cta-section d-flex mt-10 mt-lg-6\">",
+          "target": [
+            ".cta-section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label class=\"accessible-label m-0 overflow-hidden\" for=\"search-textfield\">Search courses</label>",
+          "target": [
+            ".accessible-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input autocomplete=\"off\" class=\"search-textfield position-absolute top-0 start-0 w-100 h-100\" id=\"search-textfield\" name=\"q\" placeholder=\"Search courses\" type=\"text\">",
+          "target": [
+            "#search-textfield"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>What would you like to study?</h3>",
+          "target": [
+            ".iconlistsvg__content > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".col-md-4.iconlistsvg__section.col-xs-12:nth-child(1) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".col-md-4.iconlistsvg__section.col-xs-12:nth-child(2) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".col-md-4.iconlistsvg__section.col-xs-12:nth-child(3) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".col-md-4.iconlistsvg__section.col-xs-12:nth-child(4) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(5) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(6) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(7) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(8) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(9) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(10) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(11) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(12) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(13) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(14) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(15) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(16) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(17) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(18) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(19) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-10 col-sm-10 col-xs-10 iconlistsvg__section--text\">",
+          "target": [
+            ".iconlistsvg__view.col-md-4.iconlistsvg__section:nth-child(20) > .col-md-10.iconlistsvg__section--text.col-sm-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text cmp-text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0\">",
+          "target": [
+            ".text.aem-GridColumn--default--none.aem-GridColumn--offset--default--0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".col-lg-4.card-3-view.col-12:nth-child(1) > .icon-feature.flex-column.h-100 > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".col-lg-4.card-3-view.col-12:nth-child(2) > .icon-feature.flex-column.h-100 > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".col-lg-4.card-3-view.col-12:nth-child(3) > .icon-feature.flex-column.h-100 > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rmitctabutton text-centerbutton aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".rmitctabutton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text cmp-text aem-GridColumn aem-GridColumn--default--12\">\n<div id=\"text-8a06ef81fd\" class=\"cmp-text\">\n    <p style=\"font-size: 12.0px;text-align: center;\"><sup>Sources: *Times Higher Education (THE) University Impact Rankings 2024</sup></p>\n\n</div>\n\n    \n\n</div>",
+          "target": [
+            ".text.cmp-text.aem-GridColumn:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"generic-gridlist gridlist list img-tile aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0\">",
+          "target": [
+            ".responsivegrid.root > .aem-Grid--default--12.aem-Grid--12.aem-Grid > .generic-gridlist.gridlist.list"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"experiencefragment aem-GridColumn aem-GridColumn--default--12 at-element-marker\">",
+          "target": [
+            ".at-element-marker.experiencefragment.aem-GridColumn:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"experiencefragment aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            "section > div:nth-child(1) > .aem-Grid--default--12.aem-Grid--12.aem-Grid > .experiencefragment.aem-GridColumn.aem-GridColumn--default--12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"country-acknowledgement--flags\">",
+          "target": [
+            ".country-acknowledgement--flags"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"country-acknowledgement--title\">\n                <p class=\"font_museo500\">Acknowledgement of Country</p>\n            </div>",
+          "target": [
+            ".country-acknowledgement--title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"country-acknowledgement--description\">",
+          "target": [
+            ".country-acknowledgement--description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"info__text\">More information</span>",
+          "target": [
+            ".info__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://upress.link",
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.upress.io\" rel=\"nofollow\">welcome!</a>",
+          "target": [
+            "a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.91 (foreground color: #4299e1, background color: #f7fafc, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>upress.link is just one of our domains offering FREE sub-domains for you to start your website with.</p>",
+          "target": [
+            "footer > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.15 (foreground color: #a0aec0, background color: #f7fafc, font size: 10.1pt (13.44px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>uPress - All rights reserved © 2015-2025</p>",
+          "target": [
+            "p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.15 (foreground color: #a0aec0, background color: #f7fafc, font size: 10.1pt (13.44px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "url": "https://upress.link",
+      "id": "html-has-lang",
+      "impact": "serious",
+      "description": "Ensure every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html class=\"no-js\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://upress.link",
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html class=\"no-js\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "url": "https://uq.edu.au",
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<button class=\"nav-primary__toggle nav-primary__search-toggle\" data-gtm-action=\"Toggle\">\n        <div class=\"search-toggle__label\">Search</div>\n      </button>",
+          "target": [
+            ".nav-primary__search-toggle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "url": "https://uq.edu.au",
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a class=\"uq-footer__link gtm-processed\" href=\"https://www.uq.edu.au/about/cricos-link\" rel=\"external\" data-gtm-label=\"CRICOS 00025B\">00025B</a>",
+          "target": [
+            "a[data-gtm-label=\"CRICOS 00025B\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.6:1 with the surrounding text. (Minimum contrast is 3:1, link text: #ffffff, surrounding text: #d4c8de)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "url": "https://uq.edu.au",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"#block-mainnavigation\" class=\"visually-hidden focusable\">\n      Skip to menu\n    </a>",
+          "target": [
+            "a[href$=\"#block-mainnavigation\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#footer\" class=\"visually-hidden focusable\">\n      Skip to footer\n    </a>",
+          "target": [
+            "a[href$=\"#footer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a class=\"collapsed clickable-icon gtm-mobile-nav\" type=\"button\" data-toggle=\"collapse\" data-target=\"#0-0-\" aria-controls=\"collapse\" aria-expanded=\"false\"><span class=\"icon asx-icon-up\"></span></a>",
+          "target": [
+            "a[data-target=\"#0-0-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<a class=\"collapsed clickable-icon gtm-mobile-nav\" type=\"button\" data-toggle=\"collapse\" data-target=\"#0-1-\" aria-controls=\"collapse\" aria-expanded=\"false\"><span class=\"icon asx-icon-up\"></span></a>",
+          "target": [
+            "a[data-target=\"#0-1-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<a class=\"collapsed clickable-icon gtm-mobile-nav\" type=\"button\" data-toggle=\"collapse\" data-target=\"#0-2-\" aria-controls=\"collapse\" aria-expanded=\"false\"><span class=\"icon asx-icon-up\"></span></a>",
+          "target": [
+            "a[data-target=\"#0-2-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<a class=\"collapsed clickable-icon gtm-mobile-nav\" type=\"button\" data-toggle=\"collapse\" data-target=\"#0-3-\" aria-controls=\"collapse\" aria-expanded=\"false\"><span class=\"icon asx-icon-up\"></span></a>",
+          "target": [
+            "a[data-target=\"#0-3-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<a class=\"collapsed clickable-icon gtm-mobile-nav\" type=\"button\" data-toggle=\"collapse\" data-target=\"#0-4-\" aria-controls=\"collapse\" aria-expanded=\"false\"><span class=\"icon asx-icon-up\"></span></a>",
+          "target": [
+            "a[data-target=\"#0-4-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<a class=\"collapsed clickable-icon gtm-mobile-nav\" type=\"button\" data-toggle=\"collapse\" data-target=\"#0-5-\" aria-controls=\"collapse\" aria-expanded=\"false\"><span class=\"icon asx-icon-up\"></span></a>",
+          "target": [
+            "a[data-target=\"#0-5-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "aria-hidden-focus",
+      "impact": "serious",
+      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div role=\"tabpanel\" class=\"cmp-tabs__tabpanel\" data-cmp-hook-tabs=\"tabpanel\" aria-hidden=\"true\">",
+          "target": [
+            ".cmp-tabs__tabpanel[data-cmp-hook-tabs=\"tabpanel\"][role=\"tabpanel\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div role=\"tabpanel\" class=\"cmp-tabs__tabpanel\" data-cmp-hook-tabs=\"tabpanel\" aria-hidden=\"true\">",
+          "target": [
+            ".cmp-tabs__tabpanel[data-cmp-hook-tabs=\"tabpanel\"][role=\"tabpanel\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div role=\"tabpanel\" class=\"cmp-tabs__tabpanel\" data-cmp-hook-tabs=\"tabpanel\" aria-hidden=\"true\">",
+          "target": [
+            ".cmp-tabs__tabpanel[data-cmp-hook-tabs=\"tabpanel\"][role=\"tabpanel\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h5 role=\"tab\" class=\"pn-ProductNav_Link cmp-tabs__tab cmp-tabs__tab--active gtm-tab\" data-cmp-hook-tabs=\"tab\" aria-selected=\"true\" tabindex=\"0\">Market Overview</h5>",
+          "target": [
+            ".cmp-tabs__tab--active"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<h5 role=\"tab\" class=\"pn-ProductNav_Link cmp-tabs__tab gtm-tab\" data-cmp-hook-tabs=\"tab\" aria-selected=\"false\" tabindex=\"-1\">S&amp;P ASX200 top 5</h5>",
+          "target": [
+            "h5:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<h5 role=\"tab\" class=\"pn-ProductNav_Link cmp-tabs__tab gtm-tab\" data-cmp-hook-tabs=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Price sensitive announcements</h5>",
+          "target": [
+            "h5:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<h5 role=\"tab\" class=\"pn-ProductNav_Link cmp-tabs__tab gtm-tab\" data-cmp-hook-tabs=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Sectors</h5>",
+          "target": [
+            "h5:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<button role=\"button\" class=\"cmp-carousel__action cmp-carousel__action--previous\" data-cmp-hook-carousel=\"previous\">\n             <span class=\"cmp-carousel__action-icon svgicon asx-icon-arrow\"></span>\n             <span class=\"cmp-carousel__action-text\"><!--Previous--></span>\n         </button>",
+          "target": [
+            ".cmp-carousel__action--previous"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button role=\"button\" class=\"cmp-carousel__action cmp-carousel__action--next\" data-cmp-hook-carousel=\"next\">\n             <span class=\"cmp-carousel__action-icon svgicon asx-icon-arrow\"></span>\n             <span class=\"cmp-carousel__action-text\"><!--Next--></span>\n         </button>",
+          "target": [
+            ".cmp-carousel__action--next"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.asx.com.au/markets/market-resources/trading-hours-calendar\">Trading hours and calendars</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/investors/start-investing/find-a-broker-adviser.html\">Find a broker</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/blog.html\">Blog</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"blog.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/markets/trade-our-cash-market/equity-market-prices.html\">Cash market prices</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(4) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/markets/trade-our-cash-market/todays-announcements.html\">Announcements</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(5) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/markets/trade-our-cash-market/directory.html\">Company directory</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(6) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/markets/trade-our-cash-market/australian-cash-market-report.html\">Australian Cash Market Report</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(7) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/markets/market-resources/system-status.html\">System status</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(8) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/markets/trade-our-derivatives-market/futures-market/rba-rate-tracker.html\">RBA Rate Tracker</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(9) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/content/asx/home/investors/investment-tools-and-resources/faq.html\">Frequently asked questions</a>",
+          "target": [
+            ".topline.lightblue.cmp-text > ul > li:nth-child(10) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www2.asx.com.au/content/asx/home/legals/data-disclaimers.html\">Click for restrictions</a>",
+          "target": [
+            ".small > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.49 (foreground color: #007fb1, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">About us</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(1) > .multi-column-height > .text:nth-child(1) > .gtm-text.text-wrapper.container > .cmp-text > p > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">About ASX</span>",
+          "target": [
+            "a[href$=\"about.html\"] > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">ASX shareholders&nbsp;</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(1) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(2) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Our Board</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(1) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(3) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Corporate governance</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(1) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(4) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Sustainability</span>",
+          "target": [
+            ".light-blue > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Media centre</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(1) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(6) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Regulation</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(2) > .multi-column-height > .text:nth-child(1) > .gtm-text.text-wrapper.container > .cmp-text > p > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">ASX rulebooks</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(2) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(1) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">ASX Compliance</span>",
+          "target": [
+            "a[title=\"asx compliance\"] > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">ASX regulatory framework</span>",
+          "target": [
+            "a[title=\"regulatory framework\"] > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Public Consultations &amp; Policy Submissions</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(2) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(4) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">ASX Corporate Governance Council</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(2) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(5) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Code of practice</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(2) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(6) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Get in touch</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(3) > .multi-column-height > .text:nth-child(1) > .gtm-text.text-wrapper.container > .cmp-text > p > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Blog</span>",
+          "target": [
+            "a[href$=\"blog.html\"] > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Careers</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(3) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(2) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Contact</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(3) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(3) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">LinkedIn</span>",
+          "target": [
+            "p:nth-child(4) > a[rel=\"noopener noreferrer\"][target=\"_blank\"] > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">Twitter</span>",
+          "target": [
+            "a[href$=\"ASX\"][rel=\"noopener noreferrer\"][target=\"_blank\"] > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"white\">YouTube</span>",
+          "target": [
+            ".col-md-4.multi-column.col-xs-12:nth-child(3) > .multi-column-height > .text:nth-child(2) > .gtm-text.text-wrapper.container > .topline.lightblue.cmp-text > p:nth-child(6) > a > .white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.11 (foreground color: #ffffff, background color: #f1f3f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h4><span style=\"\tfont-weight: normal;\n\">Create worlds of opportunity for your business</span></h4>",
+          "target": [
+            ".col-md-3.multi-column.col-xs-12:nth-child(1) > .multi-column-height > .recommendation > .no-border.tiles.bg-light-gray > .tiles.recommendation[target=\"_self\"] > .text.gtm-recommendsingle-link-whole > .title.text-wrapper.gtm-recommendsingle-link-whole > .cmp-text.gtm-recommendsingle-link-whole > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html lang=\"en\" class=\" objectfit object-fit\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<nav class=\"navbar-frame\">",
+          "target": [
+            ".navbar-frame"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"javascript:void(0)\" role=\"button\" tabindex=\"3\"><span class=\"icon asx-icon-search\"></span></a>",
+          "target": [
+            "a[href=\"javascript:void(0)\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.linkedin.com/company/asx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"icon asx-icon-linkedin linkedin\"></a>",
+          "target": [
+            ".asx-icon-linkedin"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://twitter.com/ASX\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"icon asx-icon-twitter twitter\"></a>",
+          "target": [
+            ".asx-icon-twitter"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.youtube.com/user/ASXLtd\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"icon asx-icon-youtube youtube\"></a>",
+          "target": [
+            ".asx-icon-youtube"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/asx__official\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"icon asx-icon-instagram instagram\"></a>",
+          "target": [
+            ".asx-icon-instagram"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/OfficialASX\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"icon asx-icon-facebook facebook\"></a>",
+          "target": [
+            ".asx-icon-facebook"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<h1 class=\"heading h1-lg\">\n                    <p>ASX SMIDcaps Conference</p>\n\n                </h1>",
+          "target": [
+            ".cmp-carousel__item--active > .heroimage-component > .hero-image.page-background.primary > .content-wrapper.container > .content > .line-wrapper > .h1-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ol role=\"tablist\" class=\"cmp-carousel__indicators\" data-cmp-hook-carousel=\"indicators\">",
+          "target": [
+            "ol"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-md-4 col-sm-12\"><h1>Markets</h1> <div><p class=\"text-large text-black\"></p> <!----></div></div>",
+          "target": [
+            ".col-md-4.col-sm-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"multi-column-control aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".multi-column-control.aem-GridColumn.aem-GridColumn--default--12:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"multi-column-control aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            "div[data-swiftype-index=\"true\"] > .aem-Grid.aem-Grid--12.aem-Grid--default--12 > .multi-column-control.aem-GridColumn.aem-GridColumn--default--12:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"quardantlayout-component aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".quardantlayout-component"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"multi-column-control aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".multi-column-control.aem-GridColumn.aem-GridColumn--default--12:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"multi-column-control aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".root > .aem-Grid.aem-Grid--12.aem-Grid--default--12 > .multi-column-control.aem-GridColumn.aem-GridColumn--default--12:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"multi-column-control\">",
+          "target": [
+            ".paddingtop15 > .multi-column-row.row > .no-gutter.col-md-12.multi-column > .multi-column-height > .multi-column-control"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://asx.com.au",
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"/content/asx/home.html\" target=\"_self\" tabindex=\"1\">",
+          "target": [
+            "a[href$=\"home.html\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"javascript:void(0)\" role=\"button\" tabindex=\"3\"><span class=\"icon asx-icon-search\"></span></a>",
+          "target": [
+            "a[href=\"javascript:void(0)\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    },
+    {
+      "url": "https://audi.com.au",
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a href=\"https://myaudi.com.au/\"><br></a>",
+          "target": [
+            "a[href$=\"myaudi.com.au/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"/en/model-range/?oneFooter=Model\" target=\"_self\"></a>",
+          "target": [
+            "li:nth-child(1) > .links__FooterLinksWrapperStyled-sc-e76211d4-0.dKZukS > ul > li[data-is-overview-link=\"false\"]:nth-child(1) > a[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"/en/audi-stock-locator/?oneFooter=Buy\" target=\"_self\"></a>",
+          "target": [
+            "li:nth-child(2) > .links__FooterLinksWrapperStyled-sc-e76211d4-0.dKZukS > ul > li[data-is-overview-link=\"false\"]:nth-child(1) > a[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"/en/owners/?oneFooter=Ownership\" target=\"_self\"></a>",
+          "target": [
+            "li:nth-child(3) > .links__FooterLinksWrapperStyled-sc-e76211d4-0.dKZukS > ul > li[data-is-overview-link=\"false\"]:nth-child(1) > a[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"/en/electric/?oneFooter=Electric\" target=\"_self\"></a>",
+          "target": [
+            "li:nth-child(4) > .links__FooterLinksWrapperStyled-sc-e76211d4-0.dKZukS > ul > li[data-is-overview-link=\"false\"]:nth-child(1) > a[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"/en/contact-us/?oneFooter=Connect\" target=\"_self\"></a>",
+          "target": [
+            "li:nth-child(5) > .links__FooterLinksWrapperStyled-sc-e76211d4-0.dKZukS > ul > li[data-is-overview-link=\"false\"]:nth-child(1) > a[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://audi.com.au",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"AudiHeaderLogo__HeaderStyledLogo-sc-69ff28c-0 iIMmkj\">",
+          "target": [
+            ".AudiHeaderLogo__HeaderStyledLogo-sc-69ff28c-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<feature-app id=\"714ef286-9206-4edc-b2fa-f8a820abf827-1\" base-url=\"https://fa-nemo-footer.cdn.prod.arcade.apps.one.audi/v1.19.2\" src=\"fh/app.js\" server-src=\"fh/app.node.js\" css=\"[]\" config=\"{&quot;__type&quot;:&quot;aem-headless&quot;}\" loading=\"eager\" primary-consumer=\"false\" data-content=\"{&quot;__type&quot;:&quot;aem-headless&quot;,&quot;contentPath&quot;:&quot;/content/dam/country/au/en/layout/footer/fa--footer&quot;,&quot;fields&quot;:{&quot;Categories&quot;:[{&quot;id&quot;:&quot;80caa7b2-8446-4cd0-88ef-7960dc8dc3e6&quot;,&quot;path&quot;:&quot;/en/layout/footer/fa--footer--category-1&quot;,&quot;contentPath&quot;:&quot;/content/dam/country/au/en/layout/footer/fa--footer--category-1&quot;,&quot;status&quot;:&quot;PUBLISHED&quot;,&quot;created&quot;:&quot;2024-10-08T09:24:33.276Z&quot;,&quot;modified&quot;:&quot;2024-10-08T09:24:33.282Z&quot;,&quot;published&quot;:&quot;2024-11-16T20:32:19.615Z&quot;,&quot;title&quot;:&quot;FA | Footer >",
+          "target": [
+            "#\\37 14ef286-9206-4edc-b2fa-f8a820abf827-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "url": "https://mirvac.com",
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<div class=\"megamenu__sub-container\" id=\"megamenu__sub-container-0\" aria-expanded=\"false\" aria-labelledby=\"megamenu__item-0\">",
+          "target": [
+            "#megamenu__sub-container-0"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-2\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-2\">",
+          "target": [
+            "#megamenu__panel-2"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-3\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-3\">",
+          "target": [
+            "#megamenu__panel-3"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-6\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-6\">",
+          "target": [
+            "#megamenu__panel-6"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-8\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-8\">",
+          "target": [
+            "#megamenu__panel-8"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__sub-container\" id=\"megamenu__sub-container-1\" aria-expanded=\"false\" aria-labelledby=\"megamenu__item-1\">",
+          "target": [
+            "#megamenu__sub-container-1"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-10\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-10\">",
+          "target": [
+            "#megamenu__panel-10"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-11\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-11\">",
+          "target": [
+            "#megamenu__panel-11"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-12\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-12\">",
+          "target": [
+            "#megamenu__panel-12"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-13\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-13\">",
+          "target": [
+            "#megamenu__panel-13"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__sub-container\" id=\"megamenu__sub-container-3\" aria-expanded=\"false\" aria-labelledby=\"megamenu__item-3\">",
+          "target": [
+            "#megamenu__sub-container-3"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__panel\" id=\"megamenu__panel-17\" aria-expanded=\"false\" aria-labelledby=\"megamenu__sub-item-17\">",
+          "target": [
+            "#megamenu__panel-17"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"megamenu__sub-container\" id=\"megamenu__sub-container-4\" aria-expanded=\"false\" aria-labelledby=\"megamenu__item-4\">",
+          "target": [
+            "#megamenu__sub-container-4"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__sub-container\" id=\"secondary-nav__sub-container-0\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__item-0\">",
+          "target": [
+            "#secondary-nav__sub-container-0"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-0\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-0\">",
+          "target": [
+            "#secondary-nav__panel-0"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-1\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-1\">",
+          "target": [
+            "#secondary-nav__panel-1"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-4\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-4\">",
+          "target": [
+            "#secondary-nav__panel-4"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-7\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-7\">",
+          "target": [
+            "#secondary-nav__panel-7"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__sub-container\" id=\"secondary-nav__sub-container-1\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__item-1\">",
+          "target": [
+            "#secondary-nav__sub-container-1"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-12\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-12\">",
+          "target": [
+            "#secondary-nav__panel-12"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__sub-container\" id=\"secondary-nav__sub-container-2\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__item-2\">",
+          "target": [
+            "#secondary-nav__sub-container-2"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-17\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-17\">",
+          "target": [
+            "#secondary-nav__panel-17"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-18\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-18\">",
+          "target": [
+            "#secondary-nav__panel-18"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-19\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-19\">",
+          "target": [
+            "#secondary-nav__panel-19"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__sub-container\" id=\"secondary-nav__sub-container-3\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__item-3\">",
+          "target": [
+            "#secondary-nav__sub-container-3"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__panel\" id=\"secondary-nav__panel-24\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__sub-item-24\">",
+          "target": [
+            "#secondary-nav__panel-24"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"secondary-nav__sub-container\" id=\"secondary-nav__sub-container-4\" aria-expanded=\"false\" aria-labelledby=\"secondary-nav__item-4\">",
+          "target": [
+            "#secondary-nav__sub-container-4"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "url": "https://mirvac.com",
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<nav class=\"megamenu\">",
+          "target": [
+            "nav:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "url": "https://mirvac.com",
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<a class=\"social-icon social-icon--dark-blue social-icon--twitter\" target=\"_blank\" href=\"https://twitter.com/mirvac\"></a>",
+          "target": [
+            ".social-icon--twitter"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"social-icon social-icon--dark-blue social-icon--linkedin\" target=\"_blank\" href=\"https://au.linkedin.com/company/mirvac\"></a>",
+          "target": [
+            ".social-icon--linkedin"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"social-icon social-icon--dark-blue social-icon--youtube\" target=\"_blank\" href=\"https://www.youtube.com/user/mirvacgroup\"></a>",
+          "target": [
+            ".social-icon--youtube"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.mirvac.com/sustainability/Data\"></a>",
+          "target": [
+            ".footer__list-container:nth-child(4) > .footer__list > .footer__list-item:nth-child(3) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.mirvac.com/investor-centre/Data\"></a>",
+          "target": [
+            ".footer__list-container:nth-child(5) > .footer__list > .footer__list-item:nth-child(6) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.mirvac.com/investor-centre/ASX-Announcements\"></a>",
+          "target": [
+            ".footer__list-container:nth-child(5) > .footer__list > .footer__list-item:nth-child(7) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.mirvac.com/investor-centre/Analyst-Toolkit\"></a>",
+          "target": [
+            ".footer__list-container:nth-child(5) > .footer__list > .footer__list-item:nth-child(8) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.mirvac.com/careers/Data\"></a>",
+          "target": [
+            ".footer__list-container:nth-child(6) > .footer__list > .footer__list-item:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.mirvac.com/contact/Data\"></a>",
+          "target": [
+            ".footer__list-container:nth-child(7) > .footer__list > .footer__list-item:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "url": "https://mirvac.com",
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<html class=\"js no-applicationcache geolocation history postmessage svg websockets localstorage sessionstorage no-websqldatabase webworkers hashchange audio canvas canvastext webgl video cssgradients opacity multiplebgs rgba inlinesvg hsla supports svgclippaths smil generatedcontent fontface textshadow cssanimations borderimage backgroundsize boxshadow borderradius csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox cssreflections csstransforms csstransitions csstransforms3d indexeddb indexeddb-deletedatabase\" lang=\"en\" data-uw-w-loader=\"\" style=\"--vh: 6px;\" data-uw-rm-lang=\"false\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "url": "https://mq.edu.au",
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+      "nodes": [
+        {
+          "html": "<p>We use cookies to improve your experience on our site and to show you personalised content. For more information about how we use cookies, please read our <a href=\"https://www.mq.edu.au/about/about-the-university/structure-governance/privacy\">Privacy</a> information.</p>",
+          "target": [
+            "mq-alert-cookies > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
