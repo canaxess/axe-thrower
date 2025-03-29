@@ -120,10 +120,13 @@ violations.then(data => {
         <h3>${url.replace('https://', '')}</h3>
         <ol class="violations__list">
           ${allViolations.filter(v => v.url === url).map((violation, index) => `
-            <li>${toSentenceCase(replaceHyphensWithSpaces(violation.id))}</li>
-            <ul>
-              <li>Instances: ${violation.nodes.length} - <button data-index="${index}" data-type="${violation.id}" class="view-violations" type="button">View All</button></li>
-            </ul>
+            <li>
+              <span>${toSentenceCase(replaceHyphensWithSpaces(violation.id))}</span>
+              <span class="impact impact--${violation.impact}">${toSentenceCase(violation.impact)}</span>
+              <ul>
+                <li>Instances: ${violation.nodes.length} - <button data-index="${index}" data-type="${violation.id}" class="view-violations" type="button">View All</button></li>
+              </ul>
+            </li>
           `).join('')}
         </ol>
       </article>
