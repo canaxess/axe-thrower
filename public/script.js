@@ -113,6 +113,25 @@ violations.then(data => {
       </article>
     `).join('')}
     </div>
+    <h2 id="sites">Sites (Accessibility Violations)</h2>
+    <div class="grid">
+    ${uniqueURLsWithViolations.map(url => `
+      <article class="violations">
+        <h3>${url.replace('https://', '')}</h3>
+        <ol class="violations__list">
+          ${allViolations.filter(violation => violation.url === url).map((violation) => `
+            <li>
+              <span>${toSentenceCase(replaceHyphensWithSpaces(violation.id))}</span>
+              <span class="impact impact--${violation.impact}">${toSentenceCase(violation.impact)}</span>
+              <ul>
+                <li>Instances: ${violation.nodes.length} - <button data-index="${violationVariables[violation.id].findIndex(v => v.url === url)}" data-type="${violation.id}" class="view-violations" type="button">View All</button></li>
+              </ul>
+            </li>
+          `).join('')}
+        </ol>
+      </article>
+    `).join('')}
+    </div>
   `;
 
   // Event listener for the view violations buttons
